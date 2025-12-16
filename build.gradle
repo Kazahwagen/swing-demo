@@ -6,6 +6,16 @@
  * For more details take a look at the Java Quickstart chapter in the Gradle
  * user guide available at http://gradle.org/docs/2.2.1/userguide/tutorial_java_projects.html
  */
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'edu.sc.seis:launch4j:3.0.3'
+    }
+}
 
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
